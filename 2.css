@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color:#001f3f;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.navigation-container {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.navigation-navbar{
+    flex:6;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navigation-item{
+	font-size: 1.2em;
+}
+
+.navigation-link{
+	text-decoration: none;
+	color:#c7c4d8;
+
+}
+
+.navigation-link:hover{
+	color: white;
+	background-color:rgb(38, 148, 199);
+	padding: 0.1em;
+}
+
+.card-container{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 2em 1em 0 1em;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 3px solid rgb(153, 153, 36);
+    border-radius: 2em;
+    width: 25%;
+    color: rgb(219, 218, 240);
+    margin: 0 0.1em 1.5em 0.1em;
+}
+
+
+
+.card p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.card img{
+    align-self:flex-end;
+}
+
+.line{
+    border: 1px solid rgb(153, 153, 36);
+    margin: 0 0 0 5em;
+ 
+ }
+#title{
+    margin: 0 1em 0 0;
+    color:rgb(219, 218, 240);
+}
+
+#navigation-title{
+    flex:1;
+    margin: 0 1em 0 0;
+    color:rgb(219, 218, 240);
+}
+
+#selected{
+    color:rgb(153, 153, 36);
+}
+
+@media screen and (max-width:1200px){
+
+    .navigation-item{
+        margin: 0 0.2em 0 0.2em;
+    }
+	.card-container{
+		flex-direction: column;
+        align-content: center;
+	}
+	.card img{
+		margin: 0 1em 0 1em;
+		align-self: center;
+
+	}
+
+	.card p{
+		font-size: 1em;
+	}	
+
+}
+
+@media screen and (max-width:900px){
+
+    .navigation-item{
+        margin: 0 0.2em 0 0.2em;
+    }
+	.card-container{
+		flex-direction: column;
+        align-content: center;
+	}
+	.card img{
+		margin: 0 1em 0 1em;
+		align-self: center;
+
+	}
+
+	.card p{
+		font-size: 1em;
+	}	
+
+}
+
+@media screen and (max-width:600px){
+
+    .navigation-item{
+        margin: 0 0.2em 0 0.2em;
+    }
+	.card-container{
+		flex-direction: column;
+        align-content: center;
+	}
+	.card img{
+		margin: 0 1em 0 1em;
+		align-self: center;
+
+	}
+
+	.card p{
+		font-size: 1em;
+	}	
+
+}

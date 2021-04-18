@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background-color:#001f3f;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.navigation-container {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.navigation-navbar{
+    flex:6;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navigation-item{
+	font-size: 1.2em;
+}
+
+.navigation-link{
+	text-decoration: none;
+	color:#c7c4d8;
+
+}
+
+.navigation-link:hover{
+	color: white;
+	background-color:rgb(38, 148, 199);
+	padding: 0.1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1em 0 1em;
+
+}
+
+.container h2{
+    font-size: 2em;
+    font-weight: 500;
+	line-height: 2em;
+    color:#c7c4d8;
+}
+
+.box {
+    display: flex;
+    justify-content:flex-start;
+    margin: 1em 0 1em 0;
+}
+
+.box p{
+    font-size: 2em;
+    font-weight: 100;
+	line-height: 2em;
+    color:#c7c4d8;
+    margin : 0 0 0 1em;
+}
+.line{
+    border: 1px solid rgb(153, 153, 36);
+    margin: 0 0 0 10em;
+ 
+ }
+#title{
+    margin: 0 1em 0 0;
+    color:rgb(219, 218, 240);
+}
+
+#navigation-title{
+    flex:1;
+    margin: 0 1em 0 0;
+    color:rgb(219, 218, 240);
+}
+
+#selected{
+    color:rgb(153, 153, 36);
+}
+
+@media screen and (max-width:1200px){
+
+    .container{
+        align-items: center;
+    }
+    .container hr{
+        align-self: stretch;
+        margin: 0;
+    }
+	.card-container{
+		flex-direction: column;
+        align-content: center;
+	}
+
+	.box p{
+		font-size: 1.5em;
+	}	
+
+}
+
+@media screen and (max-width:900px){
+
+    .container{
+        align-items: center;
+    }
+    .container hr{
+        align-self: stretch;
+        margin: 0;
+    }
+	.card-container{
+		flex-direction: column;
+        align-content: center;
+	}
+
+	.box p{
+		font-size: 1.5em;
+	}	
+
+}
+
+@media screen and (max-width:600px){
+
+    .container{
+        align-items: center;
+    }
+    .container hr{
+        align-self: stretch;
+        margin: 0;
+    }
+	.card-container{
+		flex-direction: column;
+        align-content: center;
+	}
+
+	.box p{
+		font-size: 1.5em;
+	}	
+
+}
